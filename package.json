@@ -1,0 +1,3 @@
+"scripts": {
+     "tw" : "tailwind build ./src/tailwind.css -o ./dist/tailwind.css"
+}
