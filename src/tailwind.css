@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+
+#label{
+    @apply text-4xl font-serif text-blue-900
+}
+
+#input{
+    @apply bg-gray-400 flex h-4 w-72
+}
+@tailwind utilities;
