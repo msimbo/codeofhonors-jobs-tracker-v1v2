@@ -9,15 +9,15 @@
     <title>Job Tracker</title>
 </head>
 <body>
-    
+
 <!-- Header  -->
-<div class="bg-red-600 p-10 flex">
+<div class="flex flex-row justify-center w-screen bg-red-600 p-5 overflow-auto items-center">
     <nav>
-        <ul class="flex p-5">
-            <div class="">
+        <ul class="space-x- flex p-5">
+            <div class="p-10 hover:bg-blue-500">
                 <img src="./img/logo-arrows.png" alt="logo-arrows">
             </div>
-            <div class="bg-yellow-500 p-10 hover:bg-blue-500">
+            <div class="bg-green-500 p-10 hover:bg-blue-500">
                 <h1>JobTracker</h1>
             </div>
             <div class="bg-yellow-500 p-10 hover:bg-blue-500">
@@ -30,27 +30,22 @@
 
 
 <!-- Main section  -->
-<div class="bg-purple-500 h-screen flex justify-center items-center">
+<div class="bg-purple-500 h-screen flex flex-col justify-center items-center">
     <div class="p-5">
         <h3>Welcome to the Job Tracker</h3>
     </div>
     <div>
-        <img width="114" height="38" src="img/searchIconIverted.png" 
-        alt="searchIcon">
-    </div>
-    <div>
         <button class="rounded bg-blue-300 hover:bg-blue-500 p-10" id="search">
-            Search
+            <div>
+                <img width="70" height="38" src="img/searchIconIverted.png"alt="searchIcon">
+            </div>
+            <div>
+                Search
+            </div>
         </button>
     </div>
 </div>
-
- <!-- Dropdown Menu -->
-
- 
 <!-- End of main section  -->
-
-
 
 <!-- footer  -->
 
@@ -58,15 +53,15 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="flex w-screen bg-red-600 p-5 overflow-auto">
+<div class="flex justify-center w-screen bg-red-600 p-5 overflow-auto items-center">
     <!-- <a href="#"><i id="linkedin" class="fa fa-linkedin"></i></a> -->
-    <a href="#"><i id="linkedin" class="fa fa-linkedin"></i></a>
+    <a href="#"><i id="linkedin" class="fa fa-linkedin hover:bg-blue-500"></i></a>
     <a href="#"><i id="twitter" class="fa fa-twitter"></i></a>
     <a href="#"><i id="facebook" class="fa fa-facebook"></i></a>
-    <a href="#"><i id="instagram" class="fa fa-instagram"></i></a>
+    <a href="#"><i id="instagram" class="fa fa-instagram hover:bg-blue-500"></i></a>
 </div>
 
-<div>
+<div class="flex justify-center w-screen">
     <h3>Copyright 2021</h3>
 </div>
 <script src="./app.js"></script>
