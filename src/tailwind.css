@@ -1,11 +1,33 @@
 @tailwind base;
 @tailwind components;
 
+/* abeco search page styles */
 #label{
-    @apply text-4xl font-serif text-blue-900
+    @apply text-4xl font-serif text-blue-900;
 }
 
-#input{
-    @apply bg-gray-400 flex h-4 w-72
+#input {
+    @apply bg-gray-400 flex h-4 w-72;
 }
+/* abeco END  */
+
+
+/* edward login-register styles */
+.base-input {
+    @apply p-3 mt-1 w-72 rounded-3xl border-2 border-gray-500 text-left focus:outline-none focus:ring-0;
+}
+
+.success-input {
+    @apply bg-gray-200 border-2 border-green-500 p-3 mt-1 w-72 rounded-3xl text-left focus:outline-none focus:ring-0;
+}
+
+.success {
+    @apply border-2 border-green-500 p-3 mt-1 w-72 rounded-3xl text-left focus:outline-none focus:ring-0;
+}
+
+.error {
+    @apply border-2 border-red-500 p-3 mt-1 w-72 rounded-3xl text-left focus:outline-none focus:ring-0;
+}
+
+/* edward END */
 @tailwind utilities;
