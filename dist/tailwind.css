@@ -580,8 +580,9 @@ video {
   }
 }
 
-<<<<<<< HEAD
 /* custom css goes here */
+
+/* Ahmed css */
 
 /* Style all font awesome icons */
 
@@ -613,13 +614,16 @@ video {
 .fa-twitter {
   background: #55ACEE;
   color: white;
-=======
+}
+
+/* end of Ahmed css */
+
 #label{
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
   --tw-text-opacity: 1;
-  color: rgba(30, 58, 138, var(--tw-text-opacity))
+  color: rgba(30, 58, 138, var(--tw-text-opacity));
 }
 
 #input{
@@ -627,8 +631,7 @@ video {
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
   display: flex;
   height: 1rem;
-  width: 18rem
->>>>>>> main
+  width: 18rem;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -183936,8 +183939,4 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main
