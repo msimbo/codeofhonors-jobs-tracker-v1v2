@@ -580,143 +580,56 @@ video {
   }
 }
 
-/* abeco search page styles */
+<<<<<<< HEAD
+/* custom css goes here */
 
+/* Style all font awesome icons */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+=======
 #label{
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
   --tw-text-opacity: 1;
-  color: rgba(30, 58, 138, var(--tw-text-opacity));
+  color: rgba(30, 58, 138, var(--tw-text-opacity))
 }
 
-#input {
+#input{
   --tw-bg-opacity: 1;
   background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
   display: flex;
   height: 1rem;
-  width: 18rem;
+  width: 18rem
+>>>>>>> main
 }
-
-/* abeco END  */
-
-/* edward login-register styles */
-
-.base-input {
-  --tw-border-opacity: 1;
-  border-color: rgba(107, 114, 128, var(--tw-border-opacity));
-  border-radius: 1.5rem;
-  border-width: 2px;
-  margin-top: 0.25rem;
-}
-
-.base-input:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.base-input {
-  padding: 0.75rem;
-}
-
-.base-input:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.base-input {
-  text-align: left;
-  width: 18rem;
-}
-
-.success-input {
-  --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-  --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
-  border-radius: 1.5rem;
-  border-width: 2px;
-  margin-top: 0.25rem;
-}
-
-.success-input:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.success-input {
-  padding: 0.75rem;
-}
-
-.success-input:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.success-input {
-  text-align: left;
-  width: 18rem;
-}
-
-.success {
-  --tw-border-opacity: 1;
-  border-color: rgba(16, 185, 129, var(--tw-border-opacity));
-  border-radius: 1.5rem;
-  border-width: 2px;
-  margin-top: 0.25rem;
-}
-
-.success:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.success {
-  padding: 0.75rem;
-}
-
-.success:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.success {
-  text-align: left;
-  width: 18rem;
-}
-
-.error {
-  --tw-border-opacity: 1;
-  border-color: rgba(239, 68, 68, var(--tw-border-opacity));
-  border-radius: 1.5rem;
-  border-width: 2px;
-  margin-top: 0.25rem;
-}
-
-.error:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.error {
-  padding: 0.75rem;
-}
-
-.error:focus {
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-}
-
-.error {
-  text-align: left;
-  width: 18rem;
-}
-
-/* edward END */
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
@@ -184023,4 +183936,8 @@ video {
     -webkit-animation: bounce 1s infinite;
             animation: bounce 1s infinite;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
