@@ -6,12 +6,12 @@ form.addEventListener('submit', function (e) {
 
   validateEmpty(username)
   validateEmpty(email)
-  validateEmpty(password1)
-  // validateEmpty(password2)
+  validateEmpty(password)
+  validateEmpty(password2)
   // validateMinLength(username)
   // validateMinLength(password2)
   // validateIsEmail(email)
-  validatePassMatch(confirm_password, password)
+  validatePassMatch(password2, password)
 
   //@TODO: Code Challenge 5c: Starting from your refactored code,
   // 1. Implement and use the  validatePassMatch() function to confirm both passwords match
@@ -57,20 +57,17 @@ function emailValidates (email) {
 }
 // console.log(emailValidates)
   
-function validatePassMatch (password1,password2) {
-  console.log(passw)
+function validatePassMatch (password1, password2) {
   if (password2.value != password1.value) {
     showError(password2, "does not match")
-    console.log()
   } else {
-  showSuccess(confirm_password,'Does not match')
+    showSuccess(password2)
   }
 }
 
 
 function validateMinLength (input) {
   console.log(input.value.length)
-  
   if (input.value.length < 5 || input.value.length > 14) {
   showError(input)
   } else {
