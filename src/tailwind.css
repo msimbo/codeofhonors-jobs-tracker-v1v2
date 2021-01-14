@@ -1,5 +1,38 @@
 @tailwind base;
 @tailwind components;
+/* custom css goes here */
+
+ /* Ahmed css */
+/* Style all font awesome icons */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* end of Ahmed css */
 
 #label{
     @apply text-4xl font-serif text-blue-900;
@@ -8,4 +41,5 @@
 #input{
     @apply bg-gray-400 flex h-4 w-72;
 }
+
 @tailwind utilities;
