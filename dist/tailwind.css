@@ -581,6 +581,7 @@ video {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* custom css goes here */
 
 /* Style all font awesome icons */
@@ -614,6 +615,8 @@ video {
   background: #55ACEE;
   color: white;
 =======
+=======
+>>>>>>> 7501de3d8014b5e53a039281d4244d0681c44a46
 #label{
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 2.25rem;
@@ -628,7 +631,10 @@ video {
   display: flex;
   height: 1rem;
   width: 18rem
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> 7501de3d8014b5e53a039281d4244d0681c44a46
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -183937,7 +183943,11 @@ video {
             animation: bounce 1s infinite;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> main
+=======
+}
+>>>>>>> 7501de3d8014b5e53a039281d4244d0681c44a46
