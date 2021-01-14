@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 /* custom css goes here */
+
+ /* Ahmed css */
 /* Style all font awesome icons */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -29,15 +31,15 @@
     background: #55ACEE;
     color: white;
   }
-@tailwind utilities;
-=======
+
+  /* end of Ahmed css */
 
 #label{
-    @apply text-4xl font-serif text-blue-900
+    @apply text-4xl font-serif text-blue-900;
 }
 
 #input{
-    @apply bg-gray-400 flex h-4 w-72
+    @apply bg-gray-400 flex h-4 w-72;
 }
+
 @tailwind utilities;
->>>>>>> main
