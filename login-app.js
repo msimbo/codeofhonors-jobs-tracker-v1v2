@@ -60,9 +60,7 @@ function emailValidates (email) {
 function validatePassMatch (password1, password2) {
   if (password2.value != password1.value) {
     showError(password2, "does not match")
-  } else {
-    showSuccess(password2)
-  }
+  } 
 }
 
 
