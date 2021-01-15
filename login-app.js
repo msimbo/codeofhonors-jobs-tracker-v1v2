@@ -1,16 +1,39 @@
 // 1. get DOM element
 const form = document.querySelector('#form')
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault()
+// const jobsList = document.querySelector('a')
+
+// GamepadButton.addEventListener('click')
+
+// onclick
+
+// button 
+// querySelector
+
+// wrap this around click function
+
+console.log(form)
+
+form.addEventListener('submit', function () {
+  // e.preventDefault()
+
+// const newElement = document.createElement("div")
+
+// const mylink = document.querySelector('#bttn')
+
+// mylink.innerHTML=`$`
+
+//   `<a href="./search-display.html"></a>`
 
   validateEmpty(username)
   validateEmpty(email)
   validateEmpty(password1)
   validateEmpty(password2)
+
   // validateMinLength(username)
   // validateMinLength(password2)
   // validateIsEmail(email)
+
   validatePassMatch(password2, password1)
 
   //@TODO: Code Challenge 5c: Starting from your refactored code,
