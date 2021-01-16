@@ -68,7 +68,7 @@ search.addEventListener('submit', function (e) {
 // }
 
 async function getJobs() {
-    const url = 'https://api.adzuna.com/v1/api/jobs/us/search/1?app_id={d9bee79e}&app_key={a8eea83bb5dbb169da71decb4c8cac85}'
+    const url = 'https://api.adzuna.com/v1/api/jobs/us/search/1?app_id=d9bee79e&app_key=a8eea83bb5dbb169da71decb4c8cac85'
     const searchResult = await fetch(url)
     const dataReturned = await searchResult.json()
 

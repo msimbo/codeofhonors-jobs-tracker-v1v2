@@ -19,9 +19,9 @@ form.addEventListener('submit', function () {
 
 // const newElement = document.createElement("div")
 
-// const mylink = document.querySelector('#bttn')
+// const myLink = document.querySelector('#bttn')
 
-// mylink.innerHTML=`$`
+// myLink.innerHTML=`<a href=""></a>`
 
 //   `<a href="./search-display.html"></a>`
 
@@ -81,7 +81,7 @@ function emailValidates (email) {
 // console.log(emailValidates)
   
 function validatePassMatch (password1, password2) {
-  if (password2.value != password1.value) {
+  if (password2.value !== password1.value) {
     showError(password2, "does not match")
   } 
 }

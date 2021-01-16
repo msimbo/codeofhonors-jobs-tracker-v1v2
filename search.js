@@ -10,16 +10,14 @@ searchForm.addEventListener('submit', async function (e) {
 
   const jobName = jobType.value
 
-
   let jobResults = await searchJobs(jobName)
-
 
   let jobs = jobResults.results // this is an Array
 
   let jobsFound = jobResults.count
 
   resultSection.innerHTML = `
-<div id="result-section" class="p-16">
+<div id="result-section" class="p-10">
 
 <h1>${jobsFound} jobs found for <strong>${jobName}</strong> in ${SEARCH_COUNTRY.toUpperCase()}</h1>
 

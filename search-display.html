@@ -6,15 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/tailwind.css">
-    <title>Some Adzuna Play - Understanding APIs</title>
-</head>
-<body>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Week 12 - Day 05 - My Playful Jobs</title>
-    <meta charset="UTF-8" />
+    <title>Search Page</title>
 </head>
 
 <body>
@@ -32,7 +24,7 @@
 
     <!-- End of Header  -->
     
-    <div class="bg-blue-400 border-2 fixed border-black shadow-lg w-screen p-2 mt-20" id="app" >
+    <div class="hidden bg-blue-400 border-2 fixed border-black shadow-lg w-screen p-2 absolute" id="app" >
         
         <form id="search-form" class="text-center">
             <h2 class="text-3xl my-3">Search For Jobs</h2>
@@ -49,13 +41,27 @@
 
     </div>
       
-      <h2 class="mt-56 text-2xl space-x-3 border-b-2 border-black bg-blue-300 shadow-lg text-center rounded p-4 mx-2 w-96 inline-block">Jobs Found</h2>
+      <h2 class="mt-56 text-xl space-x-3 border-b-2 border-black bg-blue-300 shadow-lg text-center rounded p-2 mx-2 w-96 inline-block">Jobs Found</h2>
 
-      <div id="result-section" class="px-4 bg-blue-200"></div>
+      <div id="result-section" class="px-4 border-2 border-blue-900 rounded"></div>
+
+
     
-
-
-
+    <div class="h-screen m-12 p-2 flex flex-col" id="searchPage" >
+        <form class="p-12 rounded bg-blue-900 m-16 h-96 w-96 flex whitespace-nowrap flex-col" id="form">
+            <div class="m-8 bg-white py-2 w-64 h-16 rounded shadow-lg text-center text-3xl">Search for Jobs</div>
+            
+            <label for="keyword"></label>
+            <input id="keyword" name="keyword" placeholder="Enter search keyword" class="bg-gray-300 p-2 my-2">
+            <label for="location"></label>
+            <input id="location" name="location" placeholder="Enter City, State" class="bg-gray-300 p-2 my-2">
+            
+            <button class="bg-green-700 m-8 text-white text-3xl rounded p-3 hover:bg-yellow-900 w-52 h-16" id="submit">
+                Search now
+            </button>
+        
+        </form>
+    </div>
 
 <script src="./search.js"></script>
 
