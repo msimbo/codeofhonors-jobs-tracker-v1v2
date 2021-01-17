@@ -1,12 +1,17 @@
 const searchForm = document.querySelector('#search-form')
 const jobType = document.querySelector('#job-type')
 const resultSection = document.querySelector('#result-section')
-
+const searchHeader = document.querySelector('#app')
+const searchFull = document.querySelector('#searchPage')
 const SEARCH_COUNTRY = 'us'
 
 
 searchForm.addEventListener('submit', async function (e) {
   e.preventDefault()
+
+  searchHeader.classList.remove('hidden')
+  searchFull.classList.add('hidden')
+console.log(searchFull.classList)
 
   const jobName = jobType.value
 
@@ -17,6 +22,7 @@ searchForm.addEventListener('submit', async function (e) {
   let jobsFound = jobResults.count
 
   resultSection.innerHTML = `
+
 <div id="result-section" class="p-10">
 
 <h1>${jobsFound} jobs found for <strong>${jobName}</strong> in ${SEARCH_COUNTRY.toUpperCase()}</h1>
