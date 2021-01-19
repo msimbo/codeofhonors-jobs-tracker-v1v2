@@ -8,6 +8,7 @@ const SEARCH_COUNTRY = 'us'
 const searchFull = document.querySelector('#form')
 const keyword = document.querySelector('#keyword')
 const searchFormFull = document.querySelector('#search-page')
+
 searchFull.addEventListener('submit', async function (e) {
   e.preventDefault()
 
@@ -66,10 +67,9 @@ searchForm.addEventListener('submit', async function (e) {
   console.log('3',jobsFound)
   resultSection.innerHTML = `
 
-  <div id="result-section" class="p-10">
-  
-      <h1>${jobsFound} jobs found for <strong>${jobName}</strong> in ${SEARCH_COUNTRY.toUpperCase()}</h1>
-  
+  <div id="result-section mt-56" class="p-10">
+      <h2 class=" text-xl bg-blue-400 shadow-lg text-center rounded p-2">Search results</h2>
+      <h1 class="text-center rounded p-2 text-xl bg-blue-400 text-white">${jobsFound} jobs found for <strong>${jobName}</strong> in ${SEARCH_COUNTRY.toUpperCase()}</h1> 
   </div>`
 
   jobs.forEach(function (job) {
@@ -79,7 +79,11 @@ searchForm.addEventListener('submit', async function (e) {
           <h4 class="p-2 border-2 border-blue-400 bg-blue-500 text-white whitespace-nowrap shadow-2xl">
                 <a href="${job.redirect_url}">
                        ${job.title}
-                </a> | ${job.location.display_name} 
+                 </a>| ${job.location.display_name} 
+                 <a class="" id="favorite">Like</a>
+                 <a class="" id="share">Share</a>
+                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+           
           </h4>
            <p  class="p-2">
                ${job.description}
@@ -93,7 +97,7 @@ searchForm.addEventListener('submit', async function (e) {
   })
 })
 
-async function searchJobs (jobString, jobsCount = 3, country = SEARCH_COUNTRY) {
+async function searchJobs (jobString, jobsCount = 8, country = SEARCH_COUNTRY) {
 
   const url = `http://api.adzuna.com/v1/api/jobs/${country}/search/1?app_id=a7547f34&app_key=92b62ee9bfd90c11c097004b51438beb&results_per_page=${jobsCount}&what=${jobString}&content-type=application/json`
   console.log(url)
