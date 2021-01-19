@@ -1,2 +1,2 @@
-# codeofhonors-jobs-tracker-v1v2
-Repo for Jobs Tracker V1V2 Sprint 5 project
+Repo for Jobs Tracker Sprint 7 project
+# my-jobs-tracker 
