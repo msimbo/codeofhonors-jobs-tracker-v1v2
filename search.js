@@ -8,7 +8,13 @@ const SEARCH_COUNTRY = 'us'
 const searchFull = document.querySelector('#form')
 const keyword = document.querySelector('#keyword')
 const searchFormFull = document.querySelector('#search-page')
+const like = document.querySelector('#favorite')
+const allLikes = []
 
+function likes(){
+  allLikes.push(like)
+  console.log(allLikes)
+}
 searchFull.addEventListener('submit', async function (e) {
   e.preventDefault()
 
@@ -75,15 +81,22 @@ searchForm.addEventListener('submit', async function (e) {
   jobs.forEach(function (job) {
     const div = document.createElement('div')
     div.innerHTML = `
-       <div class="rounded cursor-pointer border-2 border-blue-900 shadow-lg my-2 hover:bg-blue-400">
+       <div class="rounded flex flex-col justify-between cursor-pointer border-2 border-blue-900 shadow-lg my-2 hover:bg-blue-400">
           <h4 class="p-2 border-2 border-blue-400 bg-blue-500 text-white whitespace-nowrap shadow-2xl">
+                
                 <a href="${job.redirect_url}">
                        ${job.title}
                  </a>| ${job.location.display_name} 
-                 <a class="" id="favorite">Like</a>
-                 <a class="" id="share">Share</a>
-                 <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
-           
+                 
+                  <div>
+                   <a class="far fa-heart" id="favorite">Like</a>  
+                   <a class="far fa-heart"></a>          
+                   <a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+                   <link rel="canonical" href="/web/tweet-button">
+                 </div>
+                
+                
+                
           </h4>
            <p  class="p-2">
                ${job.description}
